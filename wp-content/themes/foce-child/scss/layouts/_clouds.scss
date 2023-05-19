@@ -1,0 +1,25 @@
+// ---- NUAGES ----
+
+.story #place {
+    position: relative;
+    background-image: url(../../foce-child/assets/images/Studio_Koukaki-image_place.png);
+}
+
+.big-cloud, .little-cloud {
+    position: absolute;
+    filter: blur(1rem);
+}
+
+.big-cloud {
+    top: 5rem;
+    right: 7rem;
+}
+
+.little-cloud {
+    top: 20rem;
+    right: 38rem;
+}
+
+.site-main {
+    overflow-y: hidden;
+}

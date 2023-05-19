@@ -1,0 +1,58 @@
+// ---- SECTION OSCAR ----
+
+#nomination {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+    background-color: $background-color;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+        }
+    }
+    h3 {
+        color: white;
+        font-size: 42px;
+        line-height: 52px;
+        letter-spacing: -0.02em;
+        background-image: url(../../foce-child/assets/images/background-oscar.png);
+        padding: 100px 84px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @media screen and (max-width: 700px) {
+            padding: 12px;
+            font-size: 22px;
+            line-height: 36px;
+        }
+        @media screen and (min-width: 701px) and (max-width: 920px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+    img {
+        mix-blend-mode: darken;
+    }
+
+    &::before {
+        content: url("../../../themes/foce/assets/images/Sunflower.png");
+        position: absolute;
+        left: 10em;
+        top: -3em;
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+    &::after {
+        content: url("../../../themes/foce/assets/images/orchid.png");
+        position: absolute;
+        right: -5em;
+        bottom: 22em;
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+}

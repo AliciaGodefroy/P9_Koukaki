@@ -1,0 +1,24 @@
+// ---- SLIDER ----
+
+#story {
+    overflow: hidden;
+
+    #characters {
+        width: 100%; 
+        box-sizing: border-box; 
+        overflow: hidden; 
+        h3 {
+            text-align: left;
+            background-position: left;
+            padding: 1em;
+        }
+        figure {
+            width: 400px;
+            height: 460px;
+        }
+    }
+    
+    .swiper-wrapper {
+        display: flex;
+    }
+}

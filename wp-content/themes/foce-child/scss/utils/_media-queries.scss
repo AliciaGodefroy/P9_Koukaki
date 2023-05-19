@@ -1,0 +1,64 @@
+// ---- MEDIA QUERIES ----
+
+
+@media screen and (max-width: 700px) {
+
+    .banner-video {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+
+    .story::before,
+    .story::after {
+        display: none;
+    }
+
+    .site-title {
+        font-size: 14px !important;
+    }
+
+    #menu {
+        padding-top: 0px !important;
+        margin-top: 322px !important;
+        height: 27vh !important;
+    }
+
+    #menu li {
+        font-size: 14px !important;
+        line-height: 0px !important;
+    }
+
+    .menu_logo,
+    .menu_mention, 
+    .flower,
+    .cat, 
+    .title-bg::before, 
+    .title-bg::after {
+        display: none;
+    }
+
+    .swiper {
+        padding-left: 20rem;
+    }
+
+}
+
+@media screen and (min-width: 701px) and (max-width: 920px) {
+    
+    .story::before,
+    .story::after, 
+    #nomination::before {
+        display: none;
+    }
+
+    .title-bg::before {
+        left: -8em!important;
+    }
+
+    .title-bg::after {
+        top: 1em!important;
+        right: -1em!important;
+    }
+}

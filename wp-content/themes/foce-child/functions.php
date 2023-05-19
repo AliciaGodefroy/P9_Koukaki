@@ -4,6 +4,8 @@ function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_script('swiper-script',  'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js');
     wp_enqueue_script( 'skrollrMin', 'http://d3a1v57rabk2hm.cloudfront.net/maxjacobson/bold_mobile-copy-8/js/skrollr.min.js', array(), '1.0', true );
+
+    wp_enqueue_style( 'main-style', get_stylesheet_directory_uri() . '/scss/main.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'child_thm_script');

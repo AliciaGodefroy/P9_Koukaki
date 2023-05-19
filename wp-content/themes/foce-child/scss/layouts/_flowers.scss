@@ -1,0 +1,57 @@
+// ---- FLOWERS ----
+
+.site-footer::before, 
+.site-footer::after,
+.story h2::after,
+.story h2::before {
+    display: none;
+}
+
+.story::after, 
+.story__article::after,
+#studio .title-bg::before, 
+#studio .title-bg::after, 
+#nomination::before, 
+#nomination::after, 
+.site-footer ul::after {
+  animation: rotate 20s linear infinite;
+}
+
+.story {
+    &::before {
+        content: url("../../foce-child/assets/images/sunflower_leaves.png");
+        position: absolute;
+        left: 0;
+        top: 7.8em;
+        z-index: -1;
+    }
+    &::after {
+        content: url('../../foce-child/assets/images/Sunflower.png');
+        position: absolute;
+        left: 2.7em;
+        top: 27em;
+    }
+}
+
+#studio {
+    h2 {
+        &::before, &::after {
+            display: none;
+        }
+
+    }
+    .title-bg {
+        &::before {
+            content: url(../../../themes/foce/assets/images/random_flower.png);
+            position: absolute;
+            left: -4em;
+            top: 0;
+        }
+        &::after {
+            content: url(../../../themes/foce/assets/images/flower.png);
+            position: absolute;
+            right: 6em;
+            top: 1.2em;
+        }
+    }
+}

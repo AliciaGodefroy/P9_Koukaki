@@ -66,9 +66,6 @@ const swiper = new Swiper('.mySwiper', {
       modifier: 1,
       slideShadows: true,
     },
-    pagination: {
-      el: '.swiper-pagination',
-    },
     on: {
       init: function() {
         /* Définir une marge gauche négative pour centrer la première diapositive */
@@ -86,7 +83,7 @@ const swiper = new Swiper('.mySwiper', {
 
 //----------------- MENU DE NAVIGATION ----------------- (fermeture au click sur les liens)
 
-const menuLinks = document.querySelectorAll('.menu-lnk');
+const menuLinks = document.querySelectorAll('.menu_link');
 const menu = document.querySelector('.main-navigation');
 
 function closeMenu() {
